@@ -11,7 +11,14 @@ export const locale = {
                 if (labels) {
                     for (const labelKey of Object.keys(labels)) {
                         if (labelKey === 'field') {
-                            labels[labelKey] = fields[labels[labelKey]][language];
+                            const multiLanguageFieldName = fields[labels[labelKey]];
+
+                            if (multiLanguageFieldName && multiLanguageFieldName[language]) {
+                                labels[labelKey] = multiLanguageFieldName[language];
+                            }
+                            else {
+                                labels[labelKey] = `[Missing translation for field ${labels[labelKey]}]`;
+                            }
                         }
                         
                         translatedText = translatedText.replace(`{{${labelKey}}}`, labels[labelKey]);

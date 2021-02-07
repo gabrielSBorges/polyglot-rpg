@@ -14,5 +14,9 @@ export const yup = {
     characters_max: {
         ptBR: 'Campo {{field}} deve conter no máximo {{number}} caracteres.',
         en: 'Fiel {{field}} must contain at most {{number}} characters.'
+    },
+    invalid_email: {
+        ptBR: 'Por favor informe um endereço de e-mail válido.',
+        en: 'Please enter a valid e-mail address.'
     }
 }

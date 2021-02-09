@@ -14,5 +14,9 @@ export const fields = {
     password: {
         ptBR: 'Senha',
         en: 'Password'
+    },
+    active: {
+        ptBR: 'Ativo',
+        en: 'Active'
     }
 }

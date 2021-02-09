@@ -1,6 +1,6 @@
 {
   "name": "polyglot-rpg",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Traduções para o sistema de RPG",
   "main": "dist/index.js",
   "license": "MIT",
